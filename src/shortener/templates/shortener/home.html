@@ -1,0 +1,9 @@
+<div style="width: 400px; margin: 0 auto;">
+    <h1>{{title}}</h1>
+    <form method="POST" action=".">
+        {% csrf_token %}
+        <!-- <input type="text" placeholder="url"> -->
+        {{ form.as_p }}
+        <input type="submit" value="Shorten">
+    </form>
+</div>
